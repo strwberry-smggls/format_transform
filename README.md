@@ -1,4 +1,4 @@
-# format_transform
+# Build from existing train/test/dev splits given in required format
 Guide to creating the NYT, RCV1 and Yelp corpora in: Investigating Active Learning Sampling Strategies for Extreme Multi Label Text Classification (Fromme et. al. 2022).
 Required are the following:
 

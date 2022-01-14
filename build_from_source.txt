@@ -1,0 +1,17 @@
+# Build NYT, RCV1 and Yelp datasets from source
+
+We use train/test/val splits as given by the source dataset.
+
+The required target data format is .csv with the following columns:
+text,label_1,label_2,...,label_n
+
+"text" contains the input text, "label_i" is either 0 or 1. 
+
+In order to create the label columns, we first crawl all labels from the dataset
+and organize them in a hierarchy. Hierarchies are stored in a .csv with the following columns:
+parent_class,child_class
+
+We use only leaf classes - that means we omit all labels that occur on the left side as parents 
+and remove them from the dataset. If a sentence will have 0 labels as a result of this process
+we remove it from the dataset entirely.
+

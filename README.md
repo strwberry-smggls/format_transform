@@ -1,5 +1,5 @@
 # format_transform
-Guide to creating the NYT, RCV1 and Yelp corpora in: Investigating Active Learning Sampling Strategies for Extreme MultiLabel Text Classification (Fromme et. al. 2022).
+Guide to creating the NYT, RCV1 and Yelp corpora in: Investigating Active Learning Sampling Strategies for Extreme Multi Label Text Classification (Fromme et. al. 2022).
 Required are the following:
 
 1)
@@ -17,7 +17,7 @@ labels,title,abstract
 labels in the "labels" field need to be separated by the "|" character:
 label1|label2|label3....
 
-Splits are generated as described in https://github.com/morningmoni/HiLAP and need to be saved accordingly.
+Splits are used as given in the datasets. 
 
 2)
 The Label hierarchy in a .csv file. This file is created by the corresponding script in https://github.com/morningmoni/HiLAP.
